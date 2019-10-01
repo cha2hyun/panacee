@@ -1,2 +1,1 @@
-print("hello test")
-print("yes")
+print("test");
