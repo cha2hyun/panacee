@@ -1,7 +1,0 @@
-1. open the terminal in pycharm (option + F12)
-2. type : git init
-3. type : git remote add origin https://github.com/201411146/panacee.git
-4. type : git remote -v
-5. navigate : VCS -> commit (command + k)
-6. navigate : VCS -> git -> push
-7. done
