@@ -1,2 +1,1 @@
-print("hello test")
-print("yes")
+#구슬문제 리뷰
