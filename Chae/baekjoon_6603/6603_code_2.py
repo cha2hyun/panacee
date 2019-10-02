@@ -1,3 +1,4 @@
+# iterator.combinations 모듈 이용
 # coding=utf-8
 import itertools
 S = []
