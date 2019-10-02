@@ -27,11 +27,6 @@
 # 1 3 4 5 6 7
 # 2 3 4 5 6 7
 
-# 방법
-# 6개의 배열을 선언하여 입려받은 배열을 하나씩 넣은다.
-# 6가지가 꽉차면 맨뒤에있는것을 제외하고 맨뒤에 + 1 이 5번째가 되게 한다
-# 반복
-
 # [python] itertools를 이용해 순열과 조합 구하기
 # https://itholic.github.io/python-combination-permutation/
 
