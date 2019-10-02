@@ -4,7 +4,7 @@ S = []
 K = []
 flag = True
 
-# 입력받으면서 예외처리 한번에
+# 입력받으면서 예외처리 체크
 while flag:
     s = input().split()
     k = int(s.pop(0))
@@ -32,20 +32,10 @@ while flag:
 flag = len(S)
 i = 0
 while flag:
-    # 탈출문
-    if i + 1 == flag:
-        break
-    print(S[i])
+    for S[i] in itertools.combinations(S[i], 6):
+        print(" ".join(S[i]))
+    print()
     i = i + 1
-
-
-# flag = True
-# if K < 6 or K != len(S): flag = False
-# Temp = list(map(int, S))
-# for i in Temp:
-#     if i < 1 or i > 50:
-#         flag = False
-# if flag:
-#     for S in itertools.combinations(S, 6):
-#         print(" ".join(S))
-#
+    # 탈출문
+    if i == flag:
+        break
