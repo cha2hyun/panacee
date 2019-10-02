@@ -1,4 +1,5 @@
 # coding=utf-8
+# 연습용
 # itertools 모듈 사용
 import itertools
 
@@ -29,4 +30,25 @@ for i in Temp:
 if flag:
     for S in itertools.combinations(S, 6):
         print(" ".join(S))
+
+
+# 참고
+# [python] itertools를 이용해 순열과 조합 구하기
+# https://itholic.github.io/python-combination-permutation/
+#
+# import itertools
+# arr = ['1', '2', '3']
+# print("arrays -> ", arr)
+# #순열방식 - permutations
+# print()
+# print("itertools.permutations(arr)")
+# print(list(map(' '.join, itertools.permutations(arr))))
+# print("itertools.permutations(arr, 2)")
+# print(list(map(' '.join, itertools.permutations(arr, 2))))
+# #조합방식 - combinations
+# print()
+# print("itertools.combinations(arr, 3)")
+# print(list(map(' '.join, itertools.combinations(arr, 3))))
+# print("itertools.combinations(arr, 2)")
+# print(list(map(' '.join, itertools.combinations(arr, 2))))
 
