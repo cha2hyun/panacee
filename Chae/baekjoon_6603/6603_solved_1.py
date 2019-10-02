@@ -1,3 +1,4 @@
+# coding=utf-8
 # itertools 모듈 사용
 import itertools
 
