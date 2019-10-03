@@ -37,6 +37,7 @@ while flag:
         print(" ".join(S[i]))
     print()
     i = i + 1
+
     # 탈출문
     if i == flag:
         break
