@@ -1,20 +1,16 @@
-# dfs 이용
-# coding=utf-8
+# -*- coding: utf-8 -*-
 import itertools
 S = []
 K = []
 flag = True
 
-# 입력받으면서 예외처리 체크
 while flag:
     s = input().split()
     k = int(s.pop(0))
 
-    # 예외처리
     if k < 6 or k != len(s):
         break
 
-    # 예외처리
     temp = list(map(int, s))
     for i in temp:
         if i < 1 or i > 50:
@@ -22,7 +18,6 @@ while flag:
     if not flag:
         break
 
-    # 탈출문
     if k == 0:
         break
 
