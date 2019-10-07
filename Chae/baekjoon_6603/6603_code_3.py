@@ -30,24 +30,36 @@ while flag:
 
 # 함수
 def combination(k, available, used):
+    print("\navailable -> ", available)
     if len(used) == k:
         yield tuple(used)
+        print("tuple(used) -> ", used, "\n-----------------\n")
+
     elif len(available) == 0:
+        print("available == 0 입니다.")
         pass
+
     else:
         head = available.pop(0)
+        print("head -> ", head)
         used.append(head)
-        for c in combination(k, available[:], used[:]):
-            yield c
+        print("used -> ", used)
+
+        for comp_1 in combination(k, available[:], used[:]):
+            print("comp_1 -> ", comp_1)
+            yield comp_1
+
         used.pop()
-        for c in combination(k, available[:], used[:]):
-            yield c
+        print("used.pop -> ", used)
+        for comp_2 in combination(k, available[:], used[:]):
+            print("comp_2 -> ", comp_2)
+            yield comp_2
 
 # 메인
 Lotto_num = 6
 for i in range(0, len(S)):
     print()
-    Result = [c for c in combination(Lotto_num, S[i], [])]
+    Result = [ _ for _ in combination(Lotto_num, S[i], [])]
     for k in range (0, len(Result)):
         print(" ".join(Result[k]))
 
