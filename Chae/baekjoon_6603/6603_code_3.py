@@ -46,7 +46,8 @@ def combination(k, available, used):
 # 메인
 Lotto_num = 6
 for i in range(0, len(S)):
-    print("")
+    print()
     Result = [c for c in combination(Lotto_num, S[i], [])]
     for k in range (0, len(Result)):
         print(" ".join(Result[k]))
+
