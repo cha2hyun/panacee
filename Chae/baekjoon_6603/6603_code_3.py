@@ -33,7 +33,9 @@ def combination(k, available, used):
     print("\navailable -> ", available)
     if len(used) == k:
         yield tuple(used)
-        print("tuple(used) -> ", used, "\n-----------------\n")
+        print("tuple(used) -> ", used,
+               '\n\n-----------------------------------\n'
+               '-----------------------------------\n')
 
     elif len(available) == 0:
         print("available == 0 입니다.")
