@@ -49,4 +49,4 @@ for i in range(0, len(S)):
     print("")
     Result = [c for c in combination(Lotto_num, S[i], [])]
     for k in range (0, len(Result)):
-        print(" ".join(map(str, Result[k])))
+        print(" ".join(Result[k]))
