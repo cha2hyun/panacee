@@ -29,3 +29,4 @@ while flag:
     S.append(s)
     K.append(k)
 
+print(K[0], S[0])

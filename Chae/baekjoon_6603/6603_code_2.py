@@ -15,7 +15,7 @@ while flag:
     if k < 6 or k != len(s):
         break
 
-    # 예외처리
+    # 예외처리, 정수형으로 변형
     temp = list(map(int, s))
     for i in temp:
         if i < 1 or i > 50:
