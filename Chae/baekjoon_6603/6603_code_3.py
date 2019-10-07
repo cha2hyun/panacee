@@ -1,6 +1,5 @@
 # dfs 이용
 # coding=utf-8
-import itertools
 S = []
 K = []
 flag = True
@@ -29,4 +28,25 @@ while flag:
     S.append(s)
     K.append(k)
 
-print(K[0], S[0])
+# 함수
+def combination(k, available, used):
+    if len(used) == k:
+        yield tuple(used)
+    elif len(available) == 0:
+        pass
+    else:
+        head = available.pop(0)
+        used.append(head)
+        for c in combination(k, available[:], used[:]):
+            yield c
+        used.pop()
+        for c in combination(k, available[:], used[:]):
+            yield c
+
+# 메인
+Lotto_num = 6
+for i in range(0, len(S)):
+    print("")
+    Result = [c for c in combination(Lotto_num, S[i], [])]
+    for k in range (0, len(Result)):
+        print(" ".join(map(str, Result[k])))
