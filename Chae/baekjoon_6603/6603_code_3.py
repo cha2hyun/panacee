@@ -28,14 +28,15 @@ while flag:
     S.append(s)
     K.append(k)
 
+
 # 함수
 def combination(k, available, used):
     print("\navailable -> ", available)
     if len(used) == k:
         yield tuple(used)
         print("tuple(used) -> ", used,
-               '\n\n-----------------------------------\n'
-               '-----------------------------------\n')
+              '\n\n-----------------------------------\n'
+              '-----------------------------------\n')
 
     elif len(available) == 0:
         print("available == 0 입니다.")
@@ -57,12 +58,12 @@ def combination(k, available, used):
             print("comp_2 -> ", comp_2)
             yield comp_2
 
+
 # 메인
 Lotto_num = 6
 for i in range(0, len(S)):
     print()
-    Result = [ _ for _ in combination(Lotto_num, S[i], [])]
-    for k in range (0, len(Result)):
+    Result = [_ for _ in combination(Lotto_num, S[i], [])]
+    for k in range(0, len(Result)):
         print(" ".join(Result[k]))
 
-committest = 0
