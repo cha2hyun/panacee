@@ -1,19 +1,24 @@
-import itertools
-
-S = ['1', '2', '3', '4', '5', '6', '7']
-for S in itertools.combinations(S, 6):
-    print(" --- ".join(S))
-
-
-def yield_test():
-    yield 1
-    yield 2
-    yield 2
-    yield 3
+s = input().split()
+a = int(s[0])
+b = int(s[1])
+print(a * b - 1)
 
 
-for _ in yield_test():
-    print(_)
+# import itertools
+# S = ['1', '2', '3', '4', '5', '6', '7']
+# for S in itertools.combinations(S, 6):
+#     print(" ".join(S))
+
+#
+# def yield_test():
+#     yield 1
+#     yield 2
+#     yield 2
+#     yield 3
+#
+#
+# for _ in yield_test():
+#     print(_)
 
 # # val = list()
 # # arr = list()
