@@ -1,5 +1,5 @@
 # coding=utf-8
-# 루트
+# 루트값임
 import math
 
 k = int(input())
