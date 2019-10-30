@@ -8,4 +8,5 @@ for i in range(4, n + 1):
     if i % 3 == 0:
         dp[i] = min(dp[i], dp[i // 3] + 1)
 
+
 print(dp[n])
