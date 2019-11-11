@@ -1,4 +1,4 @@
-#!/Users/cha2hyun_dev/PycharmProjects/untitled6/venv/bin/python
+#!/Users/cha2hyun_dev/PycharmProjects/panacee/venv/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'pip==19.0.3','console_scripts','pip3'
 __requires__ = 'pip==19.0.3'
 import re
