@@ -1,21 +1,23 @@
-dp=[]
+dp = []
 
-n=int(input())
+n = int(input())
 
-if(n == 1):
-    for i in range(0, 10): dp.append(int(1))
-
-for j in range(1, n+1):
+if n >= 1:
     for i in range(0, 10):
-        if(i==0): dp[i] = 1
+        dp.append(int(1))
+
+for j in range(1, n):
+    for i in range(0, 10):
+        if i == 0:
+            dp[i] = 1
         else:
-            dp[i] = dp[i] + dp[i-1]
-sum=0
+            dp[i] = dp[i] + dp[i - 1]
+sum = 0
 int(sum)
 for k in range(0, 10):
-   sum = int(sum)+dp[k]
+    sum = sum + dp[k]
 
-print(sum)
+print(sum%10007)
 # #include <stdio.h>
 #
 # int main() {
