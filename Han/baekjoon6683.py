@@ -9,7 +9,7 @@ def dfs(arr2, index, n2, k, j, val2):
     # print(arr2, index, n2, k, j, val2)
     if k == 0:
         for k1 in range(0, index):
-            print(arr2[k1], end = " ")
+            print(arr2[k1])
         print()
     elif j == n2:
         return
