@@ -4,11 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-<<<<<<< Updated upstream:.idea/panacee.iml
     <orderEntry type="jdk" jdkName="Python 3.7 (panacee)" jdkType="Python SDK" />
-=======
-    <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
->>>>>>> Stashed changes:.idea/201411137_Dongkyun.iml
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">
