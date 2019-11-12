@@ -1,4 +1,4 @@
-dp = [[for i in range(10)] for j in range(1000)]
+dp = [[0 for i in range(10)] for j in range(1000)]
 n = int(input())
 summary = 0
 for i in range(0, 10):
