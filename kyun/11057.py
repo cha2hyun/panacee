@@ -17,7 +17,7 @@ int(sum)
 for k in range(0, 10):
     sum = sum + dp[k]
 
-print(sum%10007)
+print(sum % 10007)
 # #include <stdio.h>
 #
 # int main() {
